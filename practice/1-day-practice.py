@@ -91,7 +91,7 @@ else:
 # 12. Find maximum of three numbers
 a= int(input("enetr 1st number:"))
 b= int(input("enetr 2nd number:"))
-c= int(input("enetr 1st number:"))
+c= int(input("enetr 3rd number:"))
 if a>b & a>c:
     print(a,"biggest number")
 elif b>c:
