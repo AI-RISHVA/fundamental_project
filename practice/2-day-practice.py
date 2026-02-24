@@ -95,9 +95,12 @@ if choice in ['1','2','3','4']:
     if choice =='3':
         print("mul:",a*b)
     if choice =='4':
-        if num2 == 0:
+        if b == 0:
             print("can't divide by 0")
         else:
             print("div:",a/b)    
 else:
-        print("Invalid choice, try again.")    
+    print("Invalid choice, try again.")    
+
+
+
