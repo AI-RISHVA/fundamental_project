@@ -103,4 +103,58 @@ else:
     print("Invalid choice, try again.")    
 
 
+# 11. Find factorial of a number    
+n= int(input("enter number:"))
+if n<0:
+    print("Factorial not defined for negative numbers")
+else:
+    result = 1
+    i=1
+    while i<=n:
+        result *= i
+        i+=1
+    print(result)
+
+# 12. Check if a number is prime
+p = int(input("enter number:"))
+if p<=1:
+    print(p,"is not prime")
+else:
+    is_prime = True
+    for i in range(2,int(p**0.5)):
+        is_prime= False
+    if is_prime == True:
+        print(p,"is prime number")
+    else:
+        print(p,"is not prime number")
+
+# 13. Print Fibonacci series up to N terms
+f = int(input("enter number:"))
+first = 0
+second = 1
+print(first)
+print(second)
+for i in range(3,f+1):
+     next_term = first + second
+     print(next_term)
+     first =second
+     second = next_term
+
+# 14. Reverse a number using while loop
+r = int(input("enter number:"))
+reverse=0
+while r>0:
+    digit = r % 10
+    reverse = reverse * 10 + digit
+    r = r//10
+print("Reversed number:", reverse)
+
+# 15. Find sum of digits of a number
+num = int(input("enter number:"))
+sum_digit =0
+while num>0:
+    digit = num % 10
+    sum_digit += digit
+    num = num // 10
+print("sum of digit :",sum_digit)
 
